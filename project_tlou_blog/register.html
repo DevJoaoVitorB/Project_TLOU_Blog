@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="mobile">
+        <nav>
+            <ol>
+                <li><a href="sobre.html" hreflang="portuguese" rel="next">O Blog</a></li>
+                <li><a href="midia.html" hreflang="portuguese" rel="next">Midias TLOU</a></li>
+                <li><a href="testimony.html" hreflang="portuguese" rel="next">Depoimentos</a></li>
+                <li id="loginMenuMobile"><a href="login.html" hreflang="portuguese" rel="prev"><i class="bi bi-person-circle"></i> Login</a></li>
+            </ol>
+        </nav>
+    </div>
+    <header>
+        <p>
+            <a href="index.html" hreflang="portuguese" rel="prev">
+                <picture>
+                    <source media="(min-width: 850px)" srcset="imagens/imagens_web/logo.png">
+                    <img src="imagens/imagens_mobile/logo_mobile.png" alt="Logo">
+                </picture>
+            </a>
+        </p>
+        <nav id="web">
+            <ol>
+                <li><a class="menu" href="sobre.html" hreflang="portuguese" rel="next">O Blog</a></li>
+                <li><a class="menu" href="midia.html" hreflang="portuguese" rel="next">Midias TLOU</a></li>
+                <li><a class="menu" href="testimony.html" hreflang="portuguese" rel="next">Depoimentos</a></li>
+                <li><a id="loginMenu" href="login.html" hreflang="portuguese" rel="prev">Login <i class="bi bi-person-circle"></i></a></li>
+            </ol>
+        </nav>
+        <button id="menu"><i class="bi bi-list menu"></i></button>
+    </header>
+
+    <main id="register">
+       <article>
+           <form id="userregister" action="#">
+               <h1>CADASTRE-SE</h1>
+                <div id="registerdata">
+                    <label class="label"><input class="required" type="text" placeholder="Username" oninput="confirmUsername()"><i class="bi bi-person-fill"></i></label> <br>
+                    <p class="alert">Preencha o Campo Username! o Username deve ter no mínimo 10 caracteres!</p> <br>
+
+                    <label class="label"><input class="required" type="email" placeholder="Email" oninput="confirmEmail()"><i class="bi bi-envelope-fill"></i></label> <br>
+                    <p class="alert">Preencha o Campo Email!</p> <br>
+
+                    <label class="label"><input class="required" type="password" id="passwordRegister" placeholder="Senha" oninput="confirmPassword()"><i class="bi bi-unlock-fill" id="passwordType1" onclick="passwordLock()"></i></label> <br>
+                    <p class="alert">Preencha o Campo Senha! a Senha deve ter no mínimo 8 caracteres!</p> <br>
+
+                    <label class="label"><input class="required" type="password" id="passwordConfirm" placeholder="Confirma Senha" oninput="confirmCPassword()"><i class="bi bi-unlock-fill" id="passwordType2" onclick="passwordConfirmLock()"></i></label> <br>
+                    <p class="alert">Preencha o Campo Confirma Senha! a Senha deve ser a mesma do Campo Senha!</p> <br>
+                </div>
+                <input type="submit" value="Cadastrar">
+           </form>
+       </article>
+    </main>
+
+    <footer>
+        <div id="redes">
+            <a class="instagram" href="#" hreflang="portuguese" target="_blank" rel="external"><i class="bi bi-instagram"></i><p>Instagram</p></a>
+            <a class="whatsapp" href="#" hreflang="portuguese" target="_blank" rel="external"><i class="bi bi-whatsapp"></i><p>Whatsapp</p></a>
+            <a class="facebook" href="#" hreflang="portuguese" target="_blank" rel="external"><i class="bi bi-facebook"></i><p>Facebook</p></a>
+            <a class="twitter" href="#" hreflang="portuguese" target="_blank" rel="external"><i class="bi bi-twitter-x"></i><p>Twitter</p></a>
+        </div>
+    </footer>
+
+    <script src="javascript/register.js"></script>
+    <script src="javascript/mobile.js"></script>
+</body>
+</html>
