@@ -9,8 +9,6 @@
 > - 🎨 **CSS3** (estilização e layout)
 > - ⚙️ **JavaScript** (comportamento dinâmico)
 
----
-
 ## 📌 Descrição do Projeto
 
 > 🕹️ O site criado consiste em um **blog temático** focado na franquia 🎮 _The Last of Us_, da empresa **Naughty Dog**.  
